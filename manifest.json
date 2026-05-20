@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "MediaSession Inspector",
+  "version": "0.1.0",
+  "description": "Live DevTools view of the Media Session API: registered action handlers, metadata, playback and position state, with fire-this-action buttons.",
+  "minimum_chrome_version": "111",
+  "devtools_page": "devtools.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injected.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "ISOLATED"
+    }
+  ]
+}
