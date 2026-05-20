@@ -54,8 +54,8 @@ In Edge's PiP overlay, none of these restrictions hold. This is a Media Session 
 ## Disclosure timeline
 
 - **2026-05-20** — In-product feedback submitted via `edge://settings` → Send Feedback
-- **2026-05-20** — Discussion posted on Microsoft Edge Insider Tech Community: _(link pending — add the thread URL here once the post is live)_
-- **2026-05-20** — Investigation published here / publicly written up (post-disclosure window)
+- **2026-05-20** — Discussion posted on Microsoft Edge Insider Tech Community: https://techcommunity.microsoft.com/discussions/edgeinsiderdiscussions/picture-in-picture-seek-controls-bypass-mediasession-ad-restrictions-on-youtube/4521620
+- **2026-05-20** — Repository and investigation published. The behavior is a Media Session API compliance issue, not a security vulnerability — same-day publication does not aid exploitation.
 
 ## Environment
 
